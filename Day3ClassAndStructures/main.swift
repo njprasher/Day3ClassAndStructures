@@ -30,7 +30,7 @@ class Student
     func display() {
         print("Student ID : \(self.studentId)")
         print("First Name : \(self.firstName ?? "[No First Name]")")
-        print("Last Name : \(self.lastName)")
+        print("Last Name : \(self.lastName ?? "[No last Name]")")
         print("Gender : \(self.gender)")
         print("Result : \(self.result)")
     }
@@ -41,6 +41,11 @@ class Student
         print("Last Name : \(self.lastName)")
         print("Gender : \(self.gender)")
         print("Result : \(self.result)")
+    }
+    
+    func getFirstName() -> String
+    {
+        return self.firstName!
     }
 }
 
