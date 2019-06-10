@@ -45,7 +45,14 @@ class Student
     
     func getFirstName() -> String
     {
-        return self.firstName!
+//        return self.firstName ?? "No Name"
+//        return self.firstName!
+        if let name = self.firstName
+        {
+            return name
+        }
+        
+        return "No Name"
     }
 }
 
@@ -59,3 +66,4 @@ s1.display()
 
 s1.printData()
 
+print(s1.getFirstName())
