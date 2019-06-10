@@ -34,13 +34,17 @@ class Student
         print("Gender : \(self.gender)")
         print("Result : \(self.result)")
     }
+    
+    func printData() {
+        print("Student ID : \(self.studentId)")
+        print("First Name : \(self.firstName)")
+        print("Last Name : \(self.lastName)")
+        print("Gender : \(self.gender)")
+        print("Result : \(self.result)")
+    }
 }
 
 var s1 = Student()
-
-var s2: Student
-
-s2 = Student()
 
 s1.display()
 
@@ -48,3 +52,8 @@ s1.setValues()
 
 s1.display()
 
+s1.printData()
+
+var s2: Student
+
+s2 = Student()
