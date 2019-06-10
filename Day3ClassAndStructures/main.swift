@@ -29,7 +29,7 @@ class Student
     
     func display() {
         print("Student ID : \(self.studentId)")
-        print("First Name : \(self.firstName)")
+        print("First Name : \(self.firstName ?? "[No First Name]")")
         print("Last Name : \(self.lastName)")
         print("Gender : \(self.gender)")
         print("Result : \(self.result)")
@@ -54,6 +54,3 @@ s1.display()
 
 s1.printData()
 
-var s2: Student
-
-s2 = Student()
