@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Student
+class Student
 {
     var studentId: Int = 0
     var firstName: String?
@@ -16,14 +16,14 @@ struct Student
     var gender: Bool = false
     var result: String = ""
     
-//    func setValues()
-//    {
-//        self.studentId = 1
-//        self.firstName = "Neeraj"
-//        self.lastName = "Prasher"
-//        self.gender = true
-//        self.result = "Pass"
-//    }
+    func setValues()
+    {
+        self.studentId = 1
+        self.firstName = "Neeraj"
+        self.lastName = "Prasher"
+        self.gender = true
+        self.result = "Pass"
+    }
     
     func display() {
         print("Student ID : \(self.studentId)")
