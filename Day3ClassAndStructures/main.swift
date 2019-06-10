@@ -18,6 +18,15 @@ class Student
     var gender: Bool = false
     var result: String = ""
     
+    func setValues()
+    {
+        self.studentId = 1
+        self.firstName = "Neeraj"
+        self.lastName = "Prasher"
+        self.gender = true
+        self.result = "Pass"
+    }
+    
     func display() {
         print("Student ID : \(self.studentId)")
         print("First Name : \(self.firstName)")
@@ -35,4 +44,7 @@ s2 = Student()
 
 s1.display()
 
-s2.display()
+s1.setValues()
+
+s1.display()
+
